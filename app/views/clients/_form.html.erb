@@ -27,6 +27,13 @@
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
+  <h2>Contactos</h2>
+  <%= f.fields_for :contacts do |form| %>
+    <%= render 'contact_fields', :form => form %>
+  <% end %>
+  <%= render_new_fields f, :contacts %>
+  <a href="#" class="add_contact"><%= t 'buttons.contacts.add' %></a>
+
   <div class="actions">
     <%= f.submit %>
   </div>

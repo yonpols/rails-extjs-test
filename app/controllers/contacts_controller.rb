@@ -25,6 +25,7 @@ class ContactsController < ApplicationController
   # GET /contacts/new.json
   def new
     @contact = Contact.new
+    @clients = Client.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1/edit
   def edit
     @contact = Contact.find(params[:id])
+    @clients = Client.all
   end
 
   # POST /contacts

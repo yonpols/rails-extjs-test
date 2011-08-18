@@ -1,0 +1,24 @@
+<div class="contact" <%if defined?(id) %>id="<%= id %>"<%end%>>
+  <div class="field">
+    <%= form.label :name %><br />
+    <%= form.text_field :name %>
+  </div>
+  <div class="field">
+    <%= form.label :phone %><br />
+    <%= form.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= form.label :phone_extension %><br />
+    <%= form.number_field :phone_extension %>
+  </div>
+  <div class="field">
+    <%= form.label :mobile %><br />
+    <%= form.text_field :mobile %>
+  </div>
+  <div class="field">
+    <%= form.label :email %><br />
+    <%= form.text_field :email %>
+  </div>             
+  <%= form.hidden_field :_destroy %>
+  <a href="#" class="remove_fields">remove</a>
+</div>

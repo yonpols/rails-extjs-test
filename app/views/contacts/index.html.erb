@@ -15,7 +15,7 @@
 
 <% @contacts.each do |contact| %>
   <tr>
-    <td><%= contact.client_id %></td>
+    <td><%= contact.client.name %></td>
     <td><%= contact.name %></td>
     <td><%= contact.phone %></td>
     <td><%= contact.phone_extension %></td>

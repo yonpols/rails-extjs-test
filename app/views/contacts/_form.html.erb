@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :client_id %><br />
-    <%= f.number_field :client_id %>
+    <%= f.select :client_id, options_for_select(@clients.map {|c| [c.name, c.id]}) %>
   </div>
   <div class="field">
     <%= f.label :name %><br />
