@@ -1,4 +1,8 @@
 Sequrecrm::Application.routes.draw do
+  resources :contacts
+
+  resources :clients
+
   devise_for :users
 
   # The priority is based upon order of creation:
