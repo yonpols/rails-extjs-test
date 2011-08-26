@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @task.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @task.description %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%= @task.client %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @task.contact %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @task.category %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @task.state %>
+</p>
+
+<p>
+  <b>Client calification:</b>
+  <%= @task.client_calification %>
+</p>
+
+<p>
+  <b>Internal calification:</b>
+  <%= @task.internal_calification %>
+</p>
+
+<p>
+  <b>Max resolv time:</b>
+  <%= @task.max_resolv_time %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @task.creator %>
+</p>
+
+<p>
+  <b>Required level:</b>
+  <%= @task.required_level %>
+</p>
+
+<p>
+  <b>Asigned:</b>
+  <%= @task.asigned %>
+</p>
+
+<p>
+  <b>Started at:</b>
+  <%= @task.started_at %>
+</p>
+
+<p>
+  <b>Ended at:</b>
+  <%= @task.ended_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

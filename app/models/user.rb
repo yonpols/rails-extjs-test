@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :assigned_tasks, :class_name => 'Task'
+  has_many :created_tasks, :class_name => 'Task'
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

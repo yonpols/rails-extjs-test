@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  client: 
+  contact: 
+  category: MyString
+  state: MyString
+  client_calification: 1
+  internal_calification: 1
+  max_resolv_time: 1
+  creator: 
+  required_level: 1
+  asigned: 
+  started_at: 2011-08-18 11:47:06
+  ended_at: 2011-08-18 11:47:06
+
+two:
+  title: MyString
+  description: MyText
+  client: 
+  contact: 
+  category: MyString
+  state: MyString
+  client_calification: 1
+  internal_calification: 1
+  max_resolv_time: 1
+  creator: 
+  required_level: 1
+  asigned: 
+  started_at: 2011-08-18 11:47:06
+  ended_at: 2011-08-18 11:47:06

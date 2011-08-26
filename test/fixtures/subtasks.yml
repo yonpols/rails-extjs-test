@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  task: 
+  subtaskeable_type: MyString
+  subtaskeable: 
+  title: MyString
+  description: MyText
+
+two:
+  task: 
+  subtaskeable_type: MyString
+  subtaskeable: 
+  title: MyString
+  description: MyText

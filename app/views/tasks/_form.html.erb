@@ -1,0 +1,73 @@
+<%= form_for(@task) do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :client %><br />
+    <%= f.text_field :client %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :client_calification %><br />
+    <%= f.number_field :client_calification %>
+  </div>
+  <div class="field">
+    <%= f.label :internal_calification %><br />
+    <%= f.number_field :internal_calification %>
+  </div>
+  <div class="field">
+    <%= f.label :max_resolv_time %><br />
+    <%= f.number_field :max_resolv_time %>
+  </div>
+  <div class="field">
+    <%= f.label :creator %><br />
+    <%= f.text_field :creator %>
+  </div>
+  <div class="field">
+    <%= f.label :required_level %><br />
+    <%= f.number_field :required_level %>
+  </div>
+  <div class="field">
+    <%= f.label :asigned %><br />
+    <%= f.text_field :asigned %>
+  </div>
+  <div class="field">
+    <%= f.label :started_at %><br />
+    <%= f.datetime_select :started_at %>
+  </div>
+  <div class="field">
+    <%= f.label :ended_at %><br />
+    <%= f.datetime_select :ended_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

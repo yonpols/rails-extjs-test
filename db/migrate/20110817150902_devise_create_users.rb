@@ -9,6 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       
       t.string :name
       t.string :role
+      t.integer :level
 
       t.timestamps
     end

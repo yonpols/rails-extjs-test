@@ -1,0 +1,49 @@
+<h1>Listing tasks</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Client</th>
+    <th>Contact</th>
+    <th>Category</th>
+    <th>State</th>
+    <th>Client calification</th>
+    <th>Internal calification</th>
+    <th>Max resolv time</th>
+    <th>Creator</th>
+    <th>Required level</th>
+    <th>Asigned</th>
+    <th>Started at</th>
+    <th>Ended at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tasks.each do |task| %>
+  <tr>
+    <td><%= task.title %></td>
+    <td><%= task.description %></td>
+    <td><%= task.client %></td>
+    <td><%= task.contact %></td>
+    <td><%= task.category %></td>
+    <td><%= task.state %></td>
+    <td><%= task.client_calification %></td>
+    <td><%= task.internal_calification %></td>
+    <td><%= task.max_resolv_time %></td>
+    <td><%= task.creator %></td>
+    <td><%= task.required_level %></td>
+    <td><%= task.asigned %></td>
+    <td><%= task.started_at %></td>
+    <td><%= task.ended_at %></td>
+    <td><%= link_to 'Show', task %></td>
+    <td><%= link_to 'Edit', edit_task_path(task) %></td>
+    <td><%= link_to 'Destroy', task, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task', new_task_path %>

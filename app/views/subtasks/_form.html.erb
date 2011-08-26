@@ -1,0 +1,37 @@
+<%= form_for(@subtask) do |f| %>
+  <% if @subtask.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subtask.errors.count, "error") %> prohibited this subtask from being saved:</h2>
+
+      <ul>
+      <% @subtask.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :task %><br />
+    <%= f.text_field :task %>
+  </div>
+  <div class="field">
+    <%= f.label :subtaskeable_type %><br />
+    <%= f.text_field :subtaskeable_type %>
+  </div>
+  <div class="field">
+    <%= f.label :subtaskeable %><br />
+    <%= f.text_field :subtaskeable %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

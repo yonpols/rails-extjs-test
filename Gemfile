@@ -21,6 +21,9 @@ gem 'jquery-rails'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 gem 'cancan'
 
+#gem 'netzke-core', :git => "git://github.com/skozlov/netzke-core.git"
+#gem 'netzke-basepack', :git => "git://github.com/skozlov/netzke-basepack.git"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
